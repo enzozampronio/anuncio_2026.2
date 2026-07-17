@@ -126,13 +126,6 @@
             box-shadow: 0 14px 32px rgba(197, 123, 87, 0.48);
         }
 
-        .cta-note {
-            display: block;
-            margin-top: 1rem;
-            font-size: 0.92rem;
-            color: var(--texto-suave);
-        }
-
         /* ===== CHIPS DE CONFIANÇA ===== */
         .trust-chips {
             display: flex;
@@ -315,44 +308,17 @@
             background-color: var(--terracota);
         }
 
-        /* ===== CTA FINAL ===== */
-        .cta-final {
-            text-align: center;
-            background: linear-gradient(165deg, var(--terracota) 0%, var(--terracota-escuro) 100%);
-            color: #fff;
-            padding: 4.5rem 1.5rem;
-        }
-
-        .cta-final h2 {
-            color: #fff;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta-final p {
-            max-width: 480px;
-            margin: 0 auto 2.2rem;
-            font-size: 1.08rem;
-            opacity: 0.95;
-        }
-
-        .cta-final .btn-primary {
-            background-color: #fff;
-            color: var(--terracota-escuro);
-            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
-        }
-
-        .cta-final .btn-primary:hover { background-color: var(--creme); }
-
         /* ===== CONTATO ===== */
         .contato {
             text-align: center;
             padding: 3.5rem 1.5rem;
+            background-color: var(--terracota);
+            color: #fff;
         }
 
-        .contato h2 { font-size: 1.6rem; margin-bottom: 0.4rem; }
+        .contato h2 { font-size: 1.6rem; margin-bottom: 0.4rem; color: #fff; }
 
-        .contato .sub { color: var(--texto-suave); margin-bottom: 1.8rem; }
+        .contato .sub { color: rgba(255, 255, 255, 0.9); margin-bottom: 1.8rem; }
 
         .redes {
             display: flex;
@@ -367,17 +333,18 @@
             justify-content: center;
             width: 52px;
             height: 52px;
-            background-color: var(--terracota);
+            background-color: var(--branco);
             border-radius: 50%;
-            color: #fff;
+            color: var(--terracota);
             text-decoration: none;
             font-size: 21px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px var(--sombra);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
         }
 
         .redes a:hover {
-            background-color: var(--terracota-escuro);
+            background-color: var(--creme);
+            color: var(--terracota-escuro);
             transform: translateY(-4px);
         }
 
@@ -387,8 +354,8 @@
             gap: 0.6rem;
             margin-top: 1.8rem;
             background-color: transparent;
-            border: 1.5px solid var(--verde-musgo);
-            color: var(--marrom);
+            border: 1.5px solid rgba(255, 255, 255, 0.7);
+            color: #fff;
             padding: 0.7rem 1.5rem;
             border-radius: 40px;
             text-decoration: none;
@@ -397,7 +364,7 @@
             transition: all 0.3s ease;
         }
 
-        .lattes-btn:hover { background-color: var(--verde-musgo); color: #fff; }
+        .lattes-btn:hover { background-color: #fff; color: var(--terracota-escuro); border-color: #fff; }
 
         /* ===== FOOTER ===== */
         footer {
@@ -417,7 +384,6 @@
             .hero h1 { font-size: 2.1rem; }
             .hero .bio { font-size: 1.1rem; }
             .btn-primary { width: 100%; max-width: 360px; justify-content: center; padding: 1.05rem 1.5rem; }
-            .cta-final h2 { font-size: 1.7rem; }
         }
     </style>
 </head>
@@ -434,7 +400,6 @@
             <a href="https://calendar.app.google/By29mjuCndaFevHH9" class="btn-primary" target="_blank" rel="noopener">
                 <i class="fas fa-calendar-check"></i>Agendar reunião de apresentação
             </a>
-            <span class="cta-note">Uma conversa inicial para nos conhecermos, sem compromisso.</span>
 
             <div class="trust-chips">
                 <span class="chip"><i class="fas fa-video"></i>Atendimento online</span>
@@ -447,6 +412,23 @@
     <!-- ===== VALORES (discreto) ===== -->
     <section class="valores">
         <p>Sessões de 50 minutos por <span class="preco">R$ 150</span>. Há também <strong>cota social</strong> — horários reservados com valor social exclusivo para inscritos em programa governamental, mediante comprovação.</p>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="contato">
+        <h2>Outros canais</h2>
+        <p class="sub">Prefere falar antes? Me encontre por aqui.</p>
+        <div class="redes">
+            <a href="mailto:dbertolini785@gmail.com" title="E-mail" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=5514998154785&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/mariabertolinipsi/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/maria-eduarda-bertolini-05b23820b/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div>
+            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=D003D1DC261D05AEAE40F6B63D068762.buscatextual_0" class="lattes-btn" target="_blank" rel="noopener">
+                <i class="fas fa-award"></i>Currículo Lattes (CNPq)
+            </a>
+        </div>
     </section>
 
     <!-- ===== FORMAÇÃO & TRAJETÓRIA (expansível) ===== -->
@@ -492,32 +474,6 @@
                 </details>
             </div>
         </details>
-    </section>
-
-    <!-- ===== CTA FINAL ===== -->
-    <section class="cta-final">
-        <h2>Vamos conversar?</h2>
-        <p>Agende uma reunião de apresentação e conheça meu trabalho. Você decide, no seu tempo, se faz sentido continuar.</p>
-        <a href="https://calendar.app.google/By29mjuCndaFevHH9" class="btn-primary" target="_blank" rel="noopener">
-            <i class="fas fa-calendar-check"></i>Agendar reunião de apresentação
-        </a>
-    </section>
-
-    <!-- ===== CONTATO ===== -->
-    <section class="contato">
-        <h2>Outros canais</h2>
-        <p class="sub">Prefere falar antes? Me encontre por aqui.</p>
-        <div class="redes">
-            <a href="mailto:dbertolini785@gmail.com" title="E-mail" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=5514998154785&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/mariabertolinipsi/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/maria-eduarda-bertolini-05b23820b/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <div>
-            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=D003D1DC261D05AEAE40F6B63D068762.buscatextual_0" class="lattes-btn" target="_blank" rel="noopener">
-                <i class="fas fa-award"></i>Currículo Lattes (CNPq)
-            </a>
-        </div>
     </section>
 
     <footer>
