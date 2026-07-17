@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "titulo": "Benchmark funcional — Landing pages de psicoterapeutas",
+    "data_pesquisa": "2026-07-17",
+    "escopo_geografico": ["Brasil (regulatório e canais)", "EUA/UK (dados quantitativos de conversão e comportamento)"],
+    "metodo": "Pesquisa desk. Cruzamento de (a) dados agregados de conversão de plataformas de atribuição, (b) estudo peer-reviewed de seleção de terapeuta em plataforma digital, (c) normativos do CFP, (d) literatura de agências especializadas no nicho.",
+    "escala_de_confianca": {
+      "alta": "dado primário, amostra grande ou norma oficial",
+      "media": "fonte secundária consistente entre múltiplos relatos",
+      "baixa": "claim de agência sem metodologia pública — tratar como hipótese de teste, não como fato"
+    },
+    "limitacao_central": "Não existe benchmark público de LP de psicólogo com amostra estatística. Os números abaixo vêm de proxies (saúde/social care, healthcare, mental health paid search). Use-os como faixa de referência, não como meta contratual."
+  },
+
+  "tese_central": {
+    "resumo": "Saúde mental é o pior converter do healthcare em mídia paga, e o playbook padrão de LP (urgência + prova social + oferta) é simultaneamente ineficaz e ilegal no Brasil. A alavanca real não está na página: está na velocidade de resposta e na especificidade do recorte clínico. A LP de psicoterapeuta não vende — ela qualifica, reduz medo e entrega a conversa para o WhatsApp em menos de 3 cliques.",
+    "implicacao": "Otimizar copy de botão tem teto baixo. Otimizar tempo de resposta e nicho tem teto alto."
+  },
+
+  "benchmarks_quantitativos": [
+    {
+      "metrica": "Taxa de conversão média — Health & Social Care (todos os canais)",
+      "valor": "2.3%",
+      "comparativo": "Média geral de 13 indústrias: 5.13%. Legal e Automotivo: 7.9%.",
+      "fonte": "Ruler Analytics 2026 (110M+ sessões, 5M+ conversões)",
+      "confianca": "alta",
+      "leitura": "Saúde está no fundo do ranking junto com travel e varejo. Uma LP de psicólogo convertendo 3% já está acima da média do setor."
+    },
+    {
+      "metrica": "Taxa de conversão — busca paga em saúde mental especificamente",
+      "valor": "1.85% (relatado como queda de 61% YoY)",
+      "comparativo": "Dermatologia 25.33% | Fisioterapia 15.35% | Health & Social Care geral em paid search: 1.2%",
+      "fonte": "Psych Bloom (agência) + Ruler Analytics 2026",
+      "confianca": "media",
+      "leitura": "O gap contra outras especialidades de saúde é de uma ordem de grandeza. Não é falha de execução — é a natureza da decisão: alta carga emocional, alto custo de erro percebido, baixa urgência forçada."
+    },
+    {
+      "metrica": "Split forma de conversão — Health & Social Care",
+      "valor": "62.8% formulário / 37.2% telefone",
+      "comparativo": "Legal: 43.7% form / 56.3% call. Marketing: 95.1% form.",
+      "fonte": "Ruler Analytics 2026",
+      "confianca": "alta",
+      "leitura": "Saúde é a 3ª indústria mais dependente de canal de voz/conversa. Quem só mede formulário subnotifica ~37% dos leads. No Brasil o equivalente do 'call' é o WhatsApp — e ele é ainda mais dominante."
+    },
+    {
+      "metrica": "Conversão por canal — Health & Social Care",
+      "valores": {
+        "email": "7.6% (melhor canal do setor)",
+        "referral_diretorios": "3.0%",
+        "direto": "4.3%",
+        "ai_referral_chatgpt_perplexity_claude": "4.3%",
+        "busca_organica": "1.8%",
+        "busca_paga": "1.2%",
+        "social_organico": "1.19%",
+        "social_pago": "0.4% (pior canal do setor)"
+      },
+      "fonte": "Ruler Analytics 2026",
+      "confianca": "alta",
+      "leitura_critica": "Inverte a intuição do mercado. Instagram Ads — canal onde a maioria dos psicólogos brasileiros investe — é o pior conversor de todos (0.4%). Email, que quase nenhum psicólogo usa, é o melhor (7.6%). Tráfego de IA já converte 3.5x melhor que social pago."
+    },
+    {
+      "metrica": "Faixa saudável de conversão para site de terapeuta",
+      "valor": "3%–8% | bounce 50%–70% | engajamento 2–4 min",
+      "alerta": "abaixo de 1.5% indica problema estrutural",
+      "fonte": "Humanly (agência do nicho)",
+      "confianca": "media"
+    },
+    {
+      "metrica": "Conversão lead → paciente agendado",
+      "valor": "40%–50% dos leads viram consulta agendada; práticas com sistema de resposta chegam a 20%+ de conversão global",
+      "fonte": "Psych Bloom / Place Digital",
+      "confianca": "baixa",
+      "leitura": "Trate como ordem de grandeza. O ponto útil: metade do vazamento acontece DEPOIS da LP."
+    },
+    {
+      "metrica": "CPC Google Ads — nicho psicologia Brasil (2025–2026)",
+      "valores": {
+        "cidades_pequenas_kw_informativas": "R$ 1,50 – R$ 3,00",
+        "capitais_kw_alta_intencao": "R$ 6,00 – R$ 8,00 (ex: 'psicóloga online', 'terapia particular [bairro]')"
+      },
+      "fonte": "Grupo KOP",
+      "confianca": "media",
+      "calculo_derivado": "A R$ 7/clique e 1.85% de conversão, o CPL bruto em capital fica ~R$ 378. Com 45% de lead→agendamento, o CAC de 1ª sessão fica ~R$ 840. Isso só fecha com LTV alto (terapia longa) ou ticket alto. Em cidade pequena (R$ 2/clique) o CPL cai para ~R$ 108 — a geografia é a variável mais sensível do modelo."
+    }
+  ],
+
+  "insights_comportamento": [
+    {
+      "id": "COMP-01",
+      "insight": "A decisão é de match, não de compra. O visitante não avalia 'este serviço é bom?' — avalia 'esta pessoa vai me entender?'",
+      "evidencia": "Estudo com 159.448 pacientes com sintomas depressivos e 167.356 com sintomas ansiosos (Grow Therapy / JMIR Formative Research, jan/2026): pacientes que selecionaram a IDENTIDADE do terapeuta (raça, religião, orientação sexual) tiveram 14% e 11% mais chance de completar 3+ sessões (OR 1.14 e 1.11). Pacientes que selecionaram a ESPECIALIDADE clínica tiveram 8% e 4% mais chance de melhora clínica significativa (OR 1.08 e 1.04).",
+      "confianca": "alta",
+      "implicacao_para_lp": "Identidade e especialidade não são vaidade de bio — são variáveis com efeito mensurável. A LP deve declarar explicitamente ambas, no topo, e não escondê-las na seção 'Sobre mim'.",
+      "nuance": "Efeito real mas modesto (OR 1.04–1.14) e o estudo é observacional, sem grupo controle. Não superestime: é uma alavanca de margem, não um multiplicador."
+    },
+    {
+      "id": "COMP-02",
+      "insight": "Só ~35% dos pacientes filtram por especialidade e ~5% por identidade — a maioria não sabe o que procurar.",
+      "evidencia": "Grow Therapy / JMIR 2026, tabela 1.",
+      "confianca": "alta",
+      "implicacao_para_lp": "Dois públicos distintos na mesma página. A minoria consciente ('quero terapeuta de trauma') precisa de match rápido no hero. A maioria inconsciente ('não sei o que tenho, só sei que não estou bem') precisa de reconhecimento de sintoma, não de nomenclatura clínica. Isso é o argumento mais forte a favor de LPs por dor ('ansiedade', 'burnout') em vez de uma LP genérica de 'psicóloga'."
+    },
+    {
+      "id": "COMP-03",
+      "insight": "Perfil demográfico concentrado: ~75% mulheres, idade média 33 anos, 64% entre 18 e 34.",
+      "evidencia": "Grow Therapy / JMIR 2026 (n=159.448). Contexto EUA/digital — direcionalmente compatível com o Brasil.",
+      "confianca": "media",
+      "implicacao_para_lp": "Mobile-first não é preferência, é o cenário base. E design 'consultório sério' de meia-idade está desalinhado com o público real."
+    },
+    {
+      "id": "COMP-04",
+      "insight": "Velocidade de resposta domina qualidade percebida. O paciente contata vários terapeutas em paralelo e fecha com quem responde primeiro.",
+      "evidencia": "Claim de 80% agendarem com o primeiro que responde (Psych Bloom). Teste A/B em clínica: fluxo com LP dedicada + CTA grande de WhatsApp + resposta em até 5 min = 17% de agendamento vs. 6% do site institucional com botão pequeno.",
+      "confianca": "baixa",
+      "leitura_honesta": "Ambos os números vêm de agências vendendo o serviço que os números justificam. O mecanismo é plausível e alinhado com o split forms/calls (dado sólido); a magnitude é suspeita. Trate como hipótese prioritária de teste, não como fato.",
+      "implicacao_para_lp": "Se o mecanismo for real, a maior alavanca de conversão do projeto não está no design da página — está no SLA de resposta. Uma LP linda com resposta em 18h perde para uma LP feia com resposta em 5 min."
+    },
+    {
+      "id": "COMP-05",
+      "insight": "Escaneamento em segundos, não leitura. O visitante processa foto → nome → especialidade → bio, nessa ordem.",
+      "evidencia": "Grow Therapy (blog), literatura de diretórios (Psychology Today, Zencare, TherapyDen).",
+      "confianca": "media",
+      "implicacao_para_lp": "A foto é elemento funcional de conversão, não decoração. Headshot corporativo rígido performa contra o objetivo: o paciente não busca um chefe, busca alguém para quem se abrir."
+    },
+    {
+      "id": "COMP-06",
+      "insight": "Tráfego orgânico em saúde converte mal (1.8%) porque chega em modo pesquisa, não em modo decisão.",
+      "evidencia": "Ruler Analytics 2026.",
+      "confianca": "alta",
+      "implicacao_para_lp": "Conteúdo educativo ('o que é ansiedade') e LP de conversão precisam ser páginas diferentes com métricas diferentes. Medir a LP com tráfego de blog contamina o diagnóstico."
+    },
+    {
+      "id": "COMP-07",
+      "insight": "Nem todo lead está pronto agora. Parte do público está em pesquisa e volta semanas depois — e some se não houver ponte.",
+      "evidencia": "Place Digital; consistente com o fato de email ser o canal de maior conversão do setor (7.6%).",
+      "confianca": "media",
+      "implicacao_para_lp": "Um CTA único ('agendar') descarta a maioria. CTA secundário de baixo compromisso (material, lista, 'tirar dúvidas sem compromisso') captura quem ainda não decidiu — e alimenta o único canal que converte bem."
+    }
+  ],
+
+  "insights_canais": [
+    {
+      "canal": "Google Ads (busca)",
+      "papel": "Intenção declarada. Melhor canal para volume qualificado, pior economia unitária.",
+      "dados": "Conv. 1.2% (Health & Social Care) a 1.85% (mental health). CPC BR: R$ 1,50–3 (interior) a R$ 6–8 (capital).",
+      "insight_funcional": "Só fecha a conta com segmentação geográfica agressiva e keywords de cauda longa por dor. Disputar 'psicólogo [capital]' é comprar tráfego caro e difuso.",
+      "confianca": "media"
+    },
+    {
+      "canal": "SEO local / Google Business Profile",
+      "papel": "Base de custo marginal zero. Compete com CPC de R$ 6–8.",
+      "insight_funcional": "Busca geolocalizada ('psicóloga perto de mim', '[bairro]') tem intenção comparável à paga sem o custo. Contrapartida: 3–6 meses até resultado mensurável.",
+      "confianca": "media"
+    },
+    {
+      "canal": "Instagram / Meta Ads",
+      "papel": "Topo de funil. É onde o mercado brasileiro de psicólogos concentra esforço — e é o pior conversor medido.",
+      "dados": "Social pago: 0.4% em Health & Social Care (o mais baixo entre todos os canais e indústrias do estudo). Social orgânico: 1.19%.",
+      "insight_funcional": "Serve para familiaridade e reconhecimento, não para clique→agendamento. Atribuição de último clique subestima social sistematicamente — mas mesmo assim, 0.4% é um teto duro. Levar Meta Ads direto para LP tende a queimar orçamento; CTWA (Click-to-WhatsApp) encurta o funil ao custo de perder rastreamento (não existe UTM em CTWA).",
+      "confianca": "alta_para_o_numero_media_para_a_interpretacao"
+    },
+    {
+      "canal": "WhatsApp",
+      "papel": "No Brasil, é o substituto funcional do 'phone call' que representa 37.2% das conversões em saúde.",
+      "insight_funcional": "É simultaneamente o canal de menor atrito e o de pior mensuração. Custo mínimo estimado para rastrear conversas via WABA/BSP no Brasil: ~R$ 69/mês + R$ 3.000 de implementação. Para consultório individual, isso raramente se paga — a alternativa é atribuição autodeclarada ('como você me encontrou?') na primeira mensagem.",
+      "confianca": "media"
+    },
+    {
+      "canal": "Diretórios (Psychology Today, Zencare, Vittude, Zenklub, Doctoralia)",
+      "papel": "Referral. Público já decidiu que quer terapia — só escolhe quem.",
+      "dados": "Referral em Health & Social Care: 3.0% (vs 1.2% paid search). Custo típico de diretórios EUA: US$ 25–30/mês.",
+      "insight_funcional": "Converte 2.5x melhor que busca paga por um custo fixo baixo. O trade-off é dependência de plataforma e comparação lado a lado com centenas de concorrentes. Estratégia coerente: diretório como aquisição, LP própria como destino de aprofundamento e desintermediação.",
+      "confianca": "media"
+    },
+    {
+      "canal": "Email",
+      "papel": "Melhor conversor do setor e quase inexplorado por psicólogos.",
+      "dados": "7.6% em Health & Social Care — 6x a busca paga, 19x o social pago.",
+      "insight_funcional": "Faz sentido dado COMP-07: quem já se cadastrou está em pesquisa ativa e responde a um gatilho no momento certo. Exige o CTA secundário de baixo compromisso na LP para existir. Cuidado ético: nutrição por email em saúde mental não pode virar sequência de vendas com escassez.",
+      "confianca": "alta_para_o_numero"
+    },
+    {
+      "canal": "Tráfego de IA (ChatGPT, Perplexity, Claude, Gemini)",
+      "papel": "Canal emergente, volume baixo, qualidade alta.",
+      "dados": "4.3% em Health & Social Care — 3.5x o paid search do mesmo setor. Já aparece de forma consistente nos dados de atribuição em 2026.",
+      "insight_funcional": "Chega com intenção mais formada porque a pergunta já foi respondida antes do clique. Otimização prática: conteúdo estruturado, factual e citável (credencial, CRP, abordagem, público, cidade em texto explícito) em vez de copy persuasiva. Ainda não há dados específicos de psicoterapia.",
+      "confianca": "media"
+    }
+  ],
+
+  "restricoes_regulatorias_br": {
+    "relevancia": "CRÍTICA — invalida boa parte do playbook padrão de LP. Um psicólogo brasileiro que copia uma LP de terapeuta americana comete infração ética.",
+    "normativos": [
+      "Código de Ética Profissional do Psicólogo — Resolução CFP 003/2007 (arts. 20, 41, 54)",
+      "Nota Técnica CFP nº 1/2022/SOE/PLENÁRIA — uso profissional das redes sociais",
+      "Resolução CFP 011/2018 — atendimento online (dispensou o cadastro de site vinculado)",
+      "Resolução CFP 010/2018 — nome social",
+      "Resolução CFP 023/2022 — rol taxativo de 13 especialidades"
+    ],
+    "obrigatorio": [
+      {
+        "regra": "Identificação completa: título 'Psicóloga/Psicólogo' + nome completo + CRP com número e jurisdição (ex: 'Psicóloga Fulana de Tal Silva — CRP-12/XXXXX')",
+        "detalhe": "Abreviação ou omissão de nome/sobrenome não é permitida. Nome social permitido (Res. 010/2018), sem necessidade do nome civil.",
+        "impacto_lp": "Deve constar em qualquer material de divulgação — hero, rodapé e anúncios. Não é 'letra miúda': é requisito."
+      },
+      {
+        "regra": "Pessoa jurídica precisa exibir o próprio registro (Nome Fantasia + CRP-XX-PJ/XXXX)",
+        "impacto_lp": "LP de clínica precisa do CRP-PJ além do CRP das psicólogas."
+      },
+      {
+        "regra": "Responsabilidade é do profissional mesmo quando a divulgação é feita por agência, designer ou plataforma coletiva (NT 1/2022)",
+        "impacto_lp": "O 'a agência que fez' não é defesa. Quem contrata a LP responde pelo conteúdo dela."
+      }
+    ],
+    "proibido": [
+      {
+        "regra": "Depoimentos de pacientes — em qualquer forma, incluindo compartilhamento de fotos e falas",
+        "fonte": "NT CFP 1/2022 (baseada no art. 9º do CEPP e Res. 003/2007, art. 54)",
+        "impacto_lp": "MATA a seção de prova social, o carrossel de reviews e o print de WhatsApp de paciente — que é o bloco de maior impacto em LP convencional. Esta é a diferença estrutural nº 1 entre LP de psicólogo BR e qualquer outra LP de serviço."
+      },
+      {
+        "regra": "Preço como forma de propaganda (Res. CFP 011/2000 ref. art. 38 CEPP)",
+        "impacto_lp": "Informar valor é diferente de anunciar valor. 'Primeira sessão 50% OFF', 'promoção', 'plano' e comparação de preço estão fora."
+      },
+      {
+        "regra": "Promessa de resultado, sensacionalismo e urgência artificial",
+        "impacto_lp": "MATA escassez ('restam 2 vagas'), countdown, garantia e headline de transformação ('supere a ansiedade em 8 semanas'). Linguagem precisa ser informativa e sutil."
+      },
+      {
+        "regra": "Diagnóstico, análise de caso ou aconselhamento que identifique o sujeito (art. 54)",
+        "impacto_lp": "Estudos de caso, mesmo anonimizados de forma frágil, são risco."
+      },
+      {
+        "regra": "Auto-promoção pura em mídia e 'especialista' sem registro de especialista no CRP",
+        "impacto_lp": "'Especialista em ansiedade' só se houver inscrição de especialista no CRP dentro do rol taxativo de 13 áreas (Res. 023/2022). Alternativa conforme: 'atendo adultos com questões relacionadas a ansiedade e burnout' — descritivo, sem título."
+      }
+    ],
+    "permitido_e_subutilizado": [
+      "Site e LP profissional (é a base da presença digital ética)",
+      "Google Ads e anúncios pagos, desde que o criativo respeite as diretrizes",
+      "Conteúdo educativo (artigos, vídeos) — permitido e incentivado, constrói autoridade",
+      "Descrever público e demanda atendidos de forma descritiva",
+      "Formação, abordagem, tempo de experiência",
+      "Nota técnica de jul/2022 consolidou a permissão de divulgação em redes sociais e sites"
+    ],
+    "insight_estrategico": "A restrição é uma vantagem competitiva disfarçada. Sem depoimento, sem preço e sem urgência, os únicos diferenciadores restantes são especificidade do recorte clínico, credibilidade verificável (CRP, formação) e qualidade da escrita. Ou seja: o CFP força exatamente o que o estudo do JMIR mostra que funciona (COMP-01/COMP-02). O caminho ético e o caminho eficaz coincidem — o que não é comum."
+  },
+
+  "padroes_estruturais": {
+    "nota": "Anatomia recorrente observada, com veredito funcional de cada bloco. Confiança geral: média (convergência entre fontes do nicho, sem dados de teste públicos).",
+    "blocos": [
+      {
+        "bloco": "Hero",
+        "padrao_observado": "Foto humana + headline empática ('Você não precisa enfrentar isso sozinho') + CTA",
+        "veredito": "MANTER a foto (COMP-05), REVISAR a headline. Headline empática genérica é o clichê do nicho — todo mundo usa, logo não diferencia ninguém. Trocar por recorte específico: quem você atende + qual demanda + modalidade + onde.",
+        "conformidade_cfp": "Identificação completa (nome + título + CRP) precisa aparecer aqui ou no rodapé."
+      },
+      {
+        "bloco": "Prova social / depoimentos",
+        "padrao_observado": "Padrão universal em LP de serviço; presente em templates de LP para psicólogo vendidos no mercado brasileiro",
+        "veredito": "REMOVER no Brasil. Vedado pela NT CFP 1/2022. Templates comerciais que incluem esse bloco são não-conformes — vários dos que circulam estão.",
+        "substituto_conforme": "Credenciais verificáveis, formação, tempo de atuação, filiações, conteúdo autoral publicado, CRP consultável."
+      },
+      {
+        "bloco": "Especialidades / demandas atendidas",
+        "padrao_observado": "Lista de temas (ansiedade, depressão, relacionamentos)",
+        "veredito": "MANTER e AMPLIFICAR — é o bloco com melhor lastro empírico (COMP-01: OR 1.08 em desfecho clínico). Mas escrever em linguagem de sintoma vivido, não de nosografia, para atingir os ~65% que não sabem filtrar (COMP-02).",
+        "cuidado": "Descrever demandas ≠ reivindicar título de especialista (Res. 023/2022)."
+      },
+      {
+        "bloco": "Sobre a terapeuta (identidade, valores, foto do espaço)",
+        "padrao_observado": "Bio + foto do consultório",
+        "veredito": "MANTER — sinaliza identidade, associada a +11–14% de retenção em 3+ sessões (COMP-01). Bio deve ser sobre o paciente, não currículo cronológico."
+      },
+      {
+        "bloco": "Como funciona / primeira sessão",
+        "padrao_observado": "Passo a passo do processo",
+        "veredito": "SUBESTIMADO. Reduz o medo do desconhecido, que é o atrito real do público — não preço, não credencial. Explicitar duração, formato, sigilo, o que acontece na primeira conversa."
+      },
+      {
+        "bloco": "FAQ",
+        "veredito": "MANTER. Duplo papel: absorve objeção e é o formato mais extraível por motores de IA (canal que já converte a 4.3%)."
+      },
+      {
+        "bloco": "CTA",
+        "padrao_observado": "CTA único repetido em 2–3 pontos (topo, meio, rodapé) + botão flutuante de WhatsApp",
+        "veredito": "MANTER a repetição; ADICIONAR CTA secundário de baixo compromisso (COMP-07). CTA primário no idioma da decisão real: 'conversar antes de decidir' converte melhor que 'agendar sessão' em um público que ainda não decidiu que quer terapia.",
+        "conformidade_cfp": "Sem urgência, sem escassez, sem promessa."
+      },
+      {
+        "bloco": "Formulário",
+        "padrao_observado": "Convergência forte: 2–3 campos. Nome, telefone, motivo principal.",
+        "veredito": "MANTER. Claim recorrente (não verificado) de que reduzir de 8 para 3 campos dobra a conversão. O resto se coleta na conversa.",
+        "confianca": "media"
+      }
+    ]
+  },
+
+  "insights_estilo": [
+    {
+      "dimensao": "Paleta",
+      "padrao_dominante": "Tons dessaturados — verde-sálvia, terrosos, azul acinzentado, off-white",
+      "leitura_funcional": "Convergiu a ponto de virar ruído: a paleta 'calma' é tão universal no nicho que deixou de sinalizar qualquer coisa. Cumpre função defensiva (não repelir), não ofensiva (não diferencia).",
+      "oportunidade": "O espaço de diferenciação migrou de cor para tipografia e voz. Cor certa não ganha; cor errada perde.",
+      "confianca": "media"
+    },
+    {
+      "dimensao": "Fotografia",
+      "padrao_dominante": "Headshot profissional 'quente e acessível' + foto do consultório",
+      "leitura_funcional": "Elemento funcional de conversão, não decorativo. O anti-padrão explícito é o retrato executivo rígido — o paciente não procura um chefe.",
+      "anti_padrao": "Stock photo de pessoa triste olhando pela janela, mãos entrelaçadas, silhueta na praia. Sinaliza ausência de identidade real, que é justamente a variável com efeito medido.",
+      "confianca": "media"
+    },
+    {
+      "dimensao": "Tom de voz",
+      "padrao_dominante": "'Sem pressão' — 'explore se a terapia faz sentido para você'",
+      "leitura_funcional": "Convergência entre a boa prática de CRO no nicho e a exigência do CFP de linguagem sutil e informativa. O tom não é escolha estética: é restrição normativa.",
+      "confianca": "media"
+    },
+    {
+      "dimensao": "Densidade",
+      "padrao_dominante": "Hierarquia visual clara, muito respiro, página longa mas escaneável, múltiplos pontos de contato ao longo do scroll",
+      "leitura_funcional": "As pessoas rolam a página — mas precisam de sinais de onde estão e de uma saída para conversar em qualquer ponto do scroll, porque a prontidão chega em momentos diferentes para cada visitante.",
+      "confianca": "media"
+    },
+    {
+      "dimensao": "Mobile",
+      "leitura_funcional": "Público concentrado em 18–34 anos (64%). Mobile é o cenário base, não a adaptação. Toque no botão de WhatsApp precisa ser o gesto mais fácil da página.",
+      "confianca": "media"
+    }
+  ],
+
+  "antipadroes": [
+    {
+      "antipadrao": "Copiar o playbook de LP de infoproduto",
+      "por_que_falha": "Urgência, escassez, garantia e depoimento — os 4 pilares — são vedados ou ineficazes aqui. Restrição legal (CFP) somada a incompatibilidade com o estado emocional do visitante."
+    },
+    {
+      "antipadrao": "Otimizar a página e ignorar o tempo de resposta",
+      "por_que_falha": "37.2% das conversões em saúde acontecem por canal de conversa (dado sólido). O gargalo provável está depois do clique, onde ninguém mede."
+    },
+    {
+      "antipadrao": "Medir só formulário",
+      "por_que_falha": "Subnotifica ~37% dos leads em saúde. No Brasil, com WhatsApp, o buraco é maior. Sintoma clássico: 'minha LP converte 0,8%' quando na verdade converte 3% e 2,2% vazam pelo WhatsApp sem rastreio."
+    },
+    {
+      "antipadrao": "LP genérica de 'psicóloga' disputando keyword de capital",
+      "por_que_falha": "R$ 6–8/clique × 1.85% de conversão = CPL de ~R$ 380 sem diferenciação. Cauda longa por dor + geografia específica é a única aritmética que fecha para consultório individual."
+    },
+    {
+      "antipadrao": "Investir a maior parte do orçamento em Instagram Ads",
+      "por_que_falha": "0.4% de conversão em social pago para Health & Social Care — o pior número de toda a matriz canal × indústria. É canal de familiaridade, cobrado como se fosse de aquisição."
+    },
+    {
+      "antipadrao": "Medir a LP com tráfego de blog",
+      "por_que_falha": "Orgânico em saúde converte a 1.8% porque chega em modo pesquisa. Misturar as duas fontes na mesma métrica impede o diagnóstico."
+    },
+    {
+      "antipadrao": "Um único CTA de alto compromisso",
+      "por_que_falha": "Descarta quem está em pesquisa — que é a maioria — e mata o único canal com 7.6% de conversão (email)."
+    },
+    {
+      "antipadrao": "Terceirizar a conformidade para a agência",
+      "por_que_falha": "NT CFP 1/2022 é explícita: a responsabilidade permanece do profissional mesmo com agência, designer ou plataforma coletiva envolvidos."
+    }
+  ],
+
+  "hipoteses_de_teste_priorizadas": [
+    {
+      "prioridade": 1,
+      "hipotese": "SLA de resposta ≤ 5 min em horário comercial + autoresposta imediata fora dele",
+      "racional": "Maior alavanca provável, menor custo de implementação, zero risco ético. Se o mecanismo de COMP-04 for real, supera qualquer ganho de design.",
+      "como_medir": "Coorte A/B por semana. Métrica: contatos iniciados → primeira sessão realizada.",
+      "esforco": "baixo",
+      "impacto_estimado": "alto"
+    },
+    {
+      "prioridade": 2,
+      "hipotese": "Instrumentar WhatsApp com atribuição autodeclarada na 1ª mensagem",
+      "racional": "Sem isso, todo o resto é medido no escuro. Solução BSP custa ~R$ 3.000 + R$ 69/mês; a pergunta 'como você me encontrou?' custa zero e resolve 80% do problema para consultório individual.",
+      "esforco": "baixo",
+      "impacto_estimado": "alto (habilitador de todas as outras decisões)"
+    },
+    {
+      "prioridade": 3,
+      "hipotese": "Uma LP por dor (ansiedade / burnout / luto) vs. LP genérica de psicóloga",
+      "racional": "Atende os dois públicos de COMP-02, baixa o CPC via cauda longa, e é a substituição conforme da prova social vedada.",
+      "esforco": "medio",
+      "impacto_estimado": "alto"
+    },
+    {
+      "prioridade": 4,
+      "hipotese": "Adicionar CTA secundário de baixo compromisso ('conversar sem compromisso' / material)",
+      "racional": "Captura os não-prontos e alimenta email, o canal de 7.6%.",
+      "esforco": "baixo",
+      "impacto_estimado": "medio"
+    },
+    {
+      "prioridade": 5,
+      "hipotese": "Realocar orçamento de Meta Ads para Google Ads cauda longa + SEO local + diretórios",
+      "racional": "0.4% vs 1.2% vs 3.0%. Contra-argumento honesto: atribuição de último clique penaliza social sistematicamente. Testar com holdout geográfico, não com dashboard.",
+      "esforco": "medio",
+      "impacto_estimado": "medio_a_alto"
+    },
+    {
+      "prioridade": 6,
+      "hipotese": "Estruturar FAQ e credenciais em texto explícito e citável para motores de IA",
+      "racional": "Canal de 4.3% crescendo. Custo marginal quase zero se o conteúdo já existe.",
+      "esforco": "baixo",
+      "impacto_estimado": "baixo_agora_crescente"
+    },
+    {
+      "prioridade": 7,
+      "hipotese": "Auditoria de conformidade CFP da LP atual",
+      "racional": "Não é otimização, é remoção de risco. Se há depoimento, preço promocional ou 'especialista' sem registro, é infração ativa.",
+      "esforco": "baixo",
+      "impacto_estimado": "defensivo_critico"
+    }
+  ],
+
+  "metricas_de_acompanhamento": {
+    "primarias": [
+      "Conversão da LP (form + clique em WhatsApp somados) — meta 3–8%, alerta abaixo de 1.5%",
+      "Tempo mediano até primeira resposta",
+      "Contato iniciado → primeira sessão realizada (referência frouxa: 40–50%)",
+      "CAC de primeira sessão por canal"
+    ],
+    "secundarias": [
+      "Bounce 50–70%",
+      "Tempo de engajamento 2–4 min",
+      "Taxa de abandono de formulário",
+      "Retenção em 3+ sessões (proxy de qualidade do match, não do marketing)"
+    ],
+    "aviso": "Segmentar por canal sempre. Média global de conversão misturando blog e Ads não diagnostica nada."
+  },
+
+  "fontes": [
+    {"ref": "Ruler Analytics — Conversion Rate Benchmarks 2026 (110M+ sessões, 5M+ conversões, 13 indústrias)", "url": "https://www.ruleranalytics.com/blog/insight/conversion-rate-by-industry/", "peso": "alta"},
+    {"ref": "Forman-Hoffman VL et al. Patient-Provider Matching, Engagement, and Outcomes of a Digital Mental Health Treatment Platform. JMIR Form Res 2026;10:e81121. doi:10.2196/81121", "url": "https://formative.jmir.org/2026/1/e81121", "peso": "alta"},
+    {"ref": "CFP — Nota Técnica nº 1/2022/SOE/PLENÁRIA (publicidade e redes sociais)", "url": "https://site.cfp.org.br/wp-content/uploads/2022/06/SEI_CFP-0612475-Nota-Tecnica.pdf", "peso": "normativa"},
+    {"ref": "CRP-SC — Publicidade e uso de redes sociais na Psicologia (atualizado 04/06/2025)", "url": "https://site.crpsc.org.br/publicidade-e-uso-de-redes-sociais-na-psicologia/", "peso": "normativa"},
+    {"ref": "CRP-PR — Divulgação Profissional (orientações da COF)", "url": "https://crppr.org.br/orientacoes/divulgacao-profissional/", "peso": "normativa"},
+    {"ref": "CRP-MT — Orientação Técnica: Publicidade e Divulgação Profissional", "url": "https://crpmt.org.br/orientacao-tecnica/publicidade-e-divulgacao-profissional", "peso": "normativa"},
+    {"ref": "CFP — Resolução nº 11/2018 (atendimento online)", "url": "https://site.cfp.org.br/cfp-publica-nova-resolucao-sobre-atendimento-psicologico-online/", "peso": "normativa"},
+    {"ref": "CFP — Resolução nº 011/2000", "url": "https://site.cfp.org.br/wp-content/uploads/2000/12/resolucao2000_11.pdf", "peso": "normativa"},
+    {"ref": "Grupo KOP — Google Ads para psicólogos (CPC Brasil, conformidade CFP)", "url": "https://www.grupokop.com.br/como-fazer-google-ads-para-psicologos", "peso": "media"},
+    {"ref": "Psych Bloom — Conversion Optimization for Therapists", "url": "https://psychbloom.co/conversion-optimization-therapists/", "peso": "baixa"},
+    {"ref": "Humanly — Website Traffic Q&A for Therapists", "url": "https://behuman.ly/website-traffic-qa-therapists/", "peso": "baixa"},
+    {"ref": "Always Open Design — CRO for Therapy Practices", "url": "https://alwaysopen.design/therapy-practices-cro-wins/", "peso": "baixa"},
+    {"ref": "Place Digital / Therapie SEO — Therapy Practice Conversion Rate", "url": "https://www.therapieseo.com/blog/the-conversion-crisis-killing-therapy-practices", "peso": "baixa"},
+    {"ref": "Grow Therapy — Psychology Today directory listings / therapist bio", "url": "https://growtherapy.com/blog/psychology-today-listing/", "peso": "media"},
+    {"ref": "gui.marketing — WhatsApp Tracking de Conversões (CTWA, WABA, BSPs)", "url": "https://gui.marketing/blog/whatsapp-tracking-conversoes/", "peso": "media"},
+    {"ref": "Marketing para Plástica — Landing pages e WhatsApp (teste 6% vs 17%)", "url": "https://www.marketingparaplastica.com.br/post/paginas-landing-e-whatsapp-para-conversao", "peso": "baixa"}
+  ]
+}

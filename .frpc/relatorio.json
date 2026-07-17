@@ -1,0 +1,360 @@
+{
+  "meta": {
+    "versao_schema": "2.0.0",
+    "criado_em": "2026-07-16T17:20:42",
+    "atualizado_em": "2026-07-16T18:19:33",
+    "nome_projeto": ""
+  },
+  "maquina_de_estado": {
+    "status_geral": "ativo",
+    "fase_atual": "fase_5_formalizacao",
+    "interacao_global": 24,
+    "interacao_na_fase": 3,
+    "fases_concluidas": [
+      "fase_1_triagem",
+      "fase_2_desconstrucao",
+      "fase_3_recursos",
+      "fase_4_pontos_de_quebra"
+    ]
+  },
+  "gatilho_inicial": {
+    "problema_ou_objetivo": "Alavancagem financeira por meio do consultorio de psicoterapia da minha esposa (Maria Eduarda Bertolini, CRP 12/26985, psicologa clinica, abordagem psicanalitica), via campanha com anuncio web para atendimento online de mulheres adultas e adolescentes"
+  },
+  "variaveis_relevantes": [
+    {
+      "id": "VAR_001",
+      "descricao": "Orcamento de midia e perda maxima aceitavel na aposta de anuncio antes de abortar (tamanho da rede de seguranca)",
+      "ordem_de_grandeza": "~R$600 de perda maxima aceitavel (2 meses x ~R$300). Rede de seguranca curta e barata.",
+      "impacto_na_decisao": "alto",
+      "fonte": "informado_usuario",
+      "fase_identificada": "fase_2_desconstrucao",
+      "valor_apurado": "R$600 (definido pelos kill-switches KS_001/KS_002 na Fase 4)"
+    },
+    {
+      "id": "VAR_002",
+      "descricao": "Custo por lead e taxa de conversao lead->paciente recorrente (define o CAC real e quantos R$ de anuncio para captar 1 paciente que fica) no nicho psicologia online, publico mulheres adultas/adolescentes",
+      "ordem_de_grandeza": "Benchmark pesquisado (BR 2024-2026): CPL R$20-90 (mediana ~R$45); conversao clique->lead 4-15%; conversao lead->paciente recorrente 8-30% (mediana ~15%); CAC resultante R$150-900 (mediana ~R$400), tendendo ao topo para operador iniciante. Confirmar com dados da propria conta apos 30-45 dias. Alavanca-chave: responder lead em <5min eleva muito a conversao.",
+      "impacto_na_decisao": "alto",
+      "fonte": "estimativa_agente",
+      "fase_identificada": "fase_3_recursos",
+      "valor_apurado": null
+    },
+    {
+      "id": "VAR_003",
+      "descricao": "Nivel de concorrencia/saturacao e custo por clique (CPC) do nicho 'psicologa online para mulheres' nas plataformas de anuncio",
+      "ordem_de_grandeza": "Benchmark pesquisado: CPC Google R$1,5-8 (mediana ~R$4,5; capitais/alta intencao no topo), CPC Meta ~R$1-5. Saturacao MODERADA-A-ALTA. Restricoes que encarecem/limitam: (a) Google classifica 'psicologo' como interesse sensivel desde 2025, restringindo segmentacao; (b) CFP (Resolucao 9/2024) proibe promessa de resultado/termos clinicos, limitando angulos de criativo e reduzindo CTR. Verba mensal tipica do nicho: R$500-2.500/mes (mediana ~R$1.200).",
+      "impacto_na_decisao": "alto",
+      "fonte": "estimativa_agente",
+      "fase_identificada": "fase_3_recursos",
+      "valor_apurado": null
+    }
+  ],
+  "cenarios_externos": [],
+  "fase_1_triagem": {
+    "status": "concluida",
+    "descricao_atual_objetivo": "Captar pacientes para a clinica de psicoterapia da esposa (Maria Eduarda Bertolini, CRP 12/26985, psicologa clinica, abordagem psicanalitica, ja pos-graduada e cursando 2a pos em Neurociencia/comportamento/psicopatologia pela PUC-PR, ~2 anos de clinica) ate que a renda da clinica permita que ela largue o emprego CLT atual e atue exclusivamente com a clinica. Meio escolhido: campanha com anuncio web para captar publico de atendimento online — mulheres adultas e adolescentes.",
+    "estimativa_inicial_tempo": "Ate 6 meses (transicao concluida ainda em 2026)",
+    "complexidade_percebida": "Complexo: multiplas dimensoes (renda-alvo a repor, orcamento de midia paga, capacidade de atendimento da profissional, publico regulado eticamente pelo CFP) e dependencia de fatores externos (plataforma de anuncios, concorrencia, tempo de conversao de lead em paciente recorrente). Prazo curto e rigido (6 meses) sobre um funil que costuma ter maturacao lenta em psicoterapia — tensao central do projeto.",
+    "interacoes": [
+      {
+        "id": 1,
+        "id_global": 1,
+        "quando": "2026-07-16T17:21:06",
+        "resumo": "Abertura: gatilho inicial capturado (alavancagem via anuncio web do consultorio da esposa psicologa)"
+      },
+      {
+        "id": 2,
+        "id_global": 2,
+        "quando": "2026-07-16T17:22:52",
+        "resumo": "Objetivo real: substituir renda do emprego CLT da esposa para ela atuar so com a clinica"
+      },
+      {
+        "id": 3,
+        "id_global": 3,
+        "quando": "2026-07-16T17:23:55",
+        "resumo": "Horizonte: transicao concluida em ate 6 meses, ainda em 2026"
+      }
+    ]
+  },
+  "fase_2_desconstrucao": {
+    "status": "concluida",
+    "motivacao_raiz": "Qualidade de vida por eficiencia: ganhar mais trabalhando muito menos. Referencia atual — CLT de 20h/semana por R$1900/mes; ticket medio atual da clinica ~R$88/hora. Ponto de equilibrio declarado: bastariam ~3 pacientes recorrentes a R$150 para igualar o CLT (3 x R$150 x ~4,3 semanas ≈ R$1935/mes). Observacao: alem de captar pacientes, o plano reprecifica o ticket de R$88 para R$150. Esse aumento e sustentavel — R$88 e uma MEDIA com amplitude — parte dos pacientes JA paga R$150. Logo R$150 nao e aspiracional: e um preco ja praticado e comprovado na propria clinica, dentro do padrao de mercado, sustentado por profissional ja pos-graduada (cursando 2a pos) com ~2 anos de clinica. A alavanca de preco tem risco baixissimo; o risco real esta 100% na captacao/conversao de novos pacientes. Tamanho da rede de seguranca (perda maxima aceitavel no anuncio) = VAR_001, a calcular.",
+    "alternativas_mais_simples_exploradas": [
+      "Metodo organico (indicacoes, rede de colegas, Instagram organico, parcerias): considerado insuficiente. Motivos do usuario — (1) e lento demais frente ao prazo; (2) nao gera a PREVISIBILIDADE/'seguranca' de fluxo que ela precisa para ter coragem de largar o CLT; (3) a grade atual CLT+clinica ja deixa pouco espaco de manejo de horarios, entao o canal precisa ser eficiente. Anuncio pago escolhido por ROE inicial promissor mesmo com investimento."
+    ],
+    "decisao_final_usuario": "manter",
+    "objetivo_reformulado": "MANTER a abordagem de captacao por anuncio pago, agora com sequencia e gatilhos explicitos: usar campanha de anuncio web (atendimento online, publico mulheres adultas e adolescentes) para gerar um fluxo PREVISIVEL de novos pacientes a R$150 (preco ja praticado e de mercado). Fase 1 — alocar os primeiros ~3 pacientes recorrentes nos horarios ja livres, ainda dentro do CLT, ate igualar/superar a renda do CLT (~R$1900/mes): esse e o 'gatilho de coragem'. Fase 2 — atingido o gatilho, largar o CLT, liberando ~20h/semana para escalar a clinica ate uma renda superior a do CLT com menos horas totais de trabalho (qualidade de vida). Horizonte: transicao concluida em ate 6 meses (2026). Risco concentrado na captacao/conversao paga (nao no preco); rede de seguranca financeira = VAR_001.",
+    "interacoes": [
+      {
+        "id": 1,
+        "id_global": 4,
+        "quando": "2026-07-16T17:28:51",
+        "resumo": "Motivacao raiz: qualidade de vida (mais renda, menos horas). Equilibrio com CLT = ~3 pacientes recorrentes a R50; ticket atual e R8"
+      },
+      {
+        "id": 2,
+        "id_global": 5,
+        "quando": "2026-07-16T17:32:55",
+        "resumo": "Organico descartado (lento, sem previsibilidade); paga escolhida pelo ROE. Restricao: grade CLT+clinica deixa pouco espaco para novos horarios"
+      },
+      {
+        "id": 3,
+        "id_global": 6,
+        "quando": "2026-07-16T17:36:36",
+        "resumo": "Confirmado: ha ao menos 3 horarios livres/semana para alocar os primeiros pacientes antes de sair do CLT"
+      },
+      {
+        "id": 4,
+        "id_global": 7,
+        "quando": "2026-07-16T17:38:50",
+        "resumo": "Alavanca de preco de baixo risco: R150 e padrao de mercado; R88 so desatualizado. Profissional ja pos-graduada (2a pos) e ~2 anos de clinica"
+      },
+      {
+        "id": 5,
+        "id_global": 8,
+        "quando": "2026-07-16T17:40:59",
+        "resumo": "Orcamento/perda maxima do anuncio vira VAR_001 (a calcular). R150 ja e praticado com parte dos pacientes: risco de preco quase nulo, risco esta na captacao"
+      }
+    ]
+  },
+  "fase_3_recursos": {
+    "status": "concluida",
+    "dimensao_humana": {
+      "pessoas_diretamente_envolvidas": 2,
+      "desgaste_equipe": 6,
+      "observacoes": "Duas pessoas com papeis distintos: Maria Eduarda ATENDE (nao sobra tempo para operar marketing) e Enzo (o usuario) EXECUTA landing page + anuncio. Enzo ja rodou campanha antes (Google Ads), mas nao e expert; considera usar IA/ferramentas atuais para elevar o nivel. Gap de expertise em trafego pago e um ponto de atencao — execucao in-house barateia e da controle, mas curva de aprendizado pode custar tempo/verba nas primeiras iteracoes. DISPONIBILIDADE de Enzo: ~6h na 1a semana (setup) e depois ~2h/semana de manutencao. Em ~24 semanas isso da ~50h totais de trabalho de marketing. 2h/semana e uma banda estreita para gerir trafego pago em janela critica com curva de aprendizado — candidato a ponto de quebra (Fase 4) se a operacao exigir mais mao/otimizacao continua."
+    },
+    "dimensao_controle": {
+      "ambiente_externo_favoravel": 6,
+      "ambiente_externo_desfavoravel": 5,
+      "forca_de_controle": 5,
+      "observacoes": "Controle moderado: o casal controla oferta, landing page, verba e a qualidade do atendimento, mas o RESULTADO depende de fatores externos que ainda nao dominam — dinamica de leilao das plataformas, comportamento de conversao do publico e, principalmente, o nivel de CONCORRENCIA/saturacao do nicho 'psicologa online para mulheres', que Enzo assume nao conhecer hoje e espera descobrir durante o projeto (=> VAR_003). Favoravel: demanda por terapia online em alta, modelo de receita recorrente, preco ja validado. Desfavoravel: CPC potencialmente caro se nicho saturado + restricoes do CFP a publicidade limitam o que o anuncio pode prometer/dizer. COMPLIANCE: casal esta ciente das regras do CFP (Codigo de Etica / Resolucao sobre publicidade: nao prometer resultado/cura, sem sensacionalismo, sem depoimento de paciente, etc.) e QUER uma revisao de compliance como missao secundaria ANTES de subir a campanha (registrar na Fase 7)."
+    },
+    "dimensao_temporal": {
+      "prazo_absoluto": "Sem gatilho inegociavel. Meta desejavel: primeiros pacientes o quanto antes; e ao menos 3 pacientes recorrentes a R$150 dentro de 6 meses (limite ~fim de 2026). Escorregar para inicio de 2027 nao quebra o projeto.",
+      "esforco_estimado_horas": 110.0,
+      "flexibilidade_temporal": 7.0,
+      "forca_temporal": 3.69,
+      "observacoes": "ESCOPO DELIBERADAMENTE MODESTO: alvo minimo e apenas ~3 pacientes recorrentes a R$150 em 6 meses. Estimador-realista (pesquisa de mercado): esforco total 60-185h (mediana ~110h) para setup + operacao in-house de 6 meses. ACHADO CRITICO: a disponibilidade declarada de Enzo (~50h no semestre; 2h/semana) esta ABAIXO da mediana necessaria (~90-110h). Setup realista de LP+pixel+criativos+copy compliant CFP e 15-30h (nao 6h), e os 2 primeiros meses pedem ~3h/semana, nao 2h. Gap de capacidade humana = principal candidato a ponto de quebra da Fase 4 (mitigavel por: usar form nativo do Meta/WhatsApp em vez de LP propria, IA para criativo/copy, ou aceitar cronograma mais longo dado que o prazo e flexivel). RESSALVA (Fase 4): Enzo esclareceu que sua disponibilidade e ELASTICA — rotina flexivel, adapta as horas conforme a demanda; as 2h/semana eram piso, nao teto. Logo a leitura 'forca temporal = 3,69 critico' e pessimista: a capacidade humana NAO e gargalo real e o kill-switch de tempo proposto foi descartado pelo usuario. Risco humano rebaixado."
+    },
+    "dimensao_financeira": {
+      "orcamento_disponivel": 300,
+      "dependencia_capital_terceiros": 1,
+      "flexibilidade_financeira": 6,
+      "custo_estimado": {
+        "minimo": 3800,
+        "media": 8500,
+        "maximo": 15000
+      },
+      "previsibilidade_financeira": 5,
+      "observacoes": "Capital proprio (sem dependencia de terceiros). Chute inicial de Enzo: comecar com ~R$300/mes no 1o mes, escalar conforme o ROI comprovado (definicao do valor saudavel fica para as fases de estudo — VAR_001). LOGICA ECONOMICA-CHAVE: paciente e RECORRENTE — 1 paciente a R$150/semana ≈ R$600/mes, e permanece por varios meses. Isso torna o CAC toleravel altissimo: mesmo pagando centenas de reais por paciente captado, o retorno se paga em ~1 mes e segue rendendo. O gargalo economico nao e quanto investir, e a TAXA DE CONVERSAO lead->paciente recorrente e o custo por lead (VAR_002). Previsibilidade media: gasto de midia e controlavel, mas CAC real so se conhece testando."
+    },
+    "outros_recursos": [
+      "Perfil no Google Maps / Google Business Profile: 'Psicologa Maria Bertolini' (https://www.google.com/maps/place/Psic%C3%B3loga+Maria+Bertolini) — atualmente um dos UNICOS canais de entrada de pacientes. Ativo de presenca local/busca ja existente; base para SEO local e prova social (avaliacoes).",
+      "Instagram profissional: @mariabertolinipsi (https://www.instagram.com/mariabertolinipsi/) — outro dos poucos canais de entrada atuais. Ativo organico que pode servir de landing/retargeting e sustentar credibilidade do anuncio pago.",
+      "Observacao: hoje a entrada de pacientes depende quase so desses 2 canais organicos — o projeto de anuncio pago e a tentativa de adicionar um canal previsivel e escalavel a essa base."
+    ],
+    "interacoes": [
+      {
+        "id": 1,
+        "id_global": 9,
+        "quando": "2026-07-16T17:44:09",
+        "resumo": "Humana: 2 pessoas. Enzo executa LP+anuncio (ja fez Google Ads, nao expert, aberto a IA); ME so atende. Gap de expertise em trafego e ponto de atencao"
+      },
+      {
+        "id": 2,
+        "id_global": 10,
+        "quando": "2026-07-16T17:45:33",
+        "resumo": "Disponibilidade Enzo: 6h na 1a semana, depois 2h/semana (~50h em 6 meses). Banda estreita para trafego pago: candidato a ponto de quebra"
+      },
+      {
+        "id": 3,
+        "id_global": 11,
+        "quando": "2026-07-16T17:49:49",
+        "resumo": "Financeira: capital proprio, inicio ~R300/mes escalavel por ROI. Paciente recorrente (~R600/mes) torna CAC toleravel alto; gargalo e conversao/custo por lead = VAR_002"
+      },
+      {
+        "id": 4,
+        "id_global": 12,
+        "quando": "2026-07-16T17:52:19",
+        "resumo": "Controle: concorrencia/CPC do nicho desconhecida (VAR_003, pesquisar). Cientes das regras do CFP; querem revisao de compliance como missao secundaria antes de rodar"
+      },
+      {
+        "id": 5,
+        "id_global": 13,
+        "quando": "2026-07-16T17:55:14",
+        "resumo": "Temporal: prazo desejavel (nao duro), escopo modesto = so ~3 pacientes recorrentes em 6 meses. Flexibilidade alta, baixa pressao temporal"
+      },
+      {
+        "id": 6,
+        "id_global": 14,
+        "quando": "2026-07-16T17:57:36",
+        "resumo": "Estimativas gravadas (esforco ~110h, custo R3800-15000). Forca temporal 3.69 = CRITICO: 2h/semana de Enzo abaixo do esforco necessario. Mitigavel (prazo flexivel/escopo modesto)"
+      }
+    ]
+  },
+  "fase_4_pontos_de_quebra": {
+    "status": "concluida",
+    "quebras": [
+      {
+        "id": "KS_001",
+        "descricao": "Sinal precoce de que o anuncio nao gera nem interesse: gastou a 1a verba (~R$300) em 30 dias e so houve impressoes, sem nenhum indicio de interesse (zero clique/lead/conversa no WhatsApp). Nao dispara ABORT, e um gatilho de PIVOT: exige mudanca drastica de estrategia (criativo, oferta, plataforma, publico ou canal).",
+        "gatilho_mensuravel": "R$300 de midia gastos em 30 dias E 0 leads/cliques qualificados (somente impressoes)",
+        "origem": "usuario"
+      },
+      {
+        "id": "KS_002",
+        "descricao": "ABORT da campanha de anuncio: mesmo apos ter pivotado a estrategia (KS_001), o 2o mes continua sem interesse real. Encerra-se a aposta de trafego pago e volta-se ao plano de sempre (organico + CLT). Downside maximo desenhado: ~R$600 de midia. Perfil de risco baixo e curto.",
+        "gatilho_mensuravel": "Custo de midia acumulado ~R$600 (2 meses) E ainda so impressoes / zero interesse real (sem leads/conversas qualificadas), ja tendo aplicado ao menos um pivot",
+        "origem": "usuario"
+      },
+      {
+        "id": "KS_003",
+        "descricao": "Limite etico/identidade: a captacao nao pode depender de violar o CFP nem de agir sem o aval da Maria Eduarda. Marketing 'agressivo' e permitido SOMENTE se (a) dentro da lei/CFP e (b) com consenso explicito dela — especialmente se o 1o mes fracassar e a tentacao de apelar aumentar. Prefere-se nao captar um paciente a capta-lo por meio antietico. Nao dispara abort do projeto; e uma cerca que barra taticas, nao o projeto.",
+        "gatilho_mensuravel": "Qualquer criativo/oferta/tatica que (i) infrinja as regras do CFP (promessa de resultado/cura, termos clinicos proibidos, depoimento de paciente, sensacionalismo/urgencia enganosa) OU (ii) va ao ar sem aprovacao explicita da Maria Eduarda => bloquear/retirar antes de publicar",
+        "origem": "agente"
+      },
+      {
+        "id": "KS_004",
+        "descricao": "Quebra de RETENCAO (risco escondido no sucesso): o modelo depende de paciente recorrente (~R$600/mes por varios meses). Se o anuncio captar gente que faz 1-2 sessoes e some, paga-se CAC de recorrente e recebe-se receita de avulso, e nunca se chega aos 3 fixos. Nao e falha de captacao, e de encaixe/fit. Combinado: pausar a ESCALA do anuncio e revisar oferta/fit/acolhimento antes de gastar mais. O proprio usuario confirma: nao reter os 3 primeiros e ponto de atencao importante.",
+        "gatilho_mensuravel": "Dos primeiros ~3-5 pacientes captados via anuncio, a maioria (>50%) nao chega a 3 sessoes / nao vira recorrente => pausar escala e revisar antes de investir mais",
+        "origem": "agente"
+      },
+      {
+        "id": "KS_005",
+        "descricao": "Risco externo de PLATAFORMA: Meta/Google tratam 'psicologo/saude' como categoria sensivel; conta nova pode ser reprovada ou suspensa sem aviso, derrubando o canal inteiro. Combinado: nao insistir jogando verba numa conta penalizada — pivotar de plataforma (Meta <-> Google) ou de abordagem. Contingencia, nao abort do projeto.",
+        "gatilho_mensuravel": "Conta de anuncios suspensa/reprovada de forma reincidente e nao recuperavel em prazo razoavel => bloquear investimento naquela conta/plataforma e pivotar",
+        "origem": "agente"
+      }
+    ],
+    "interacoes": [
+      {
+        "id": 1,
+        "id_global": 15,
+        "quando": "2026-07-16T18:01:23",
+        "resumo": "KS_001 (PIVOT, nao abort): R300 em 30 dias so com impressoes e zero interesse = mudar estrategia drasticamente"
+      },
+      {
+        "id": 2,
+        "id_global": 16,
+        "quando": "2026-07-16T18:03:09",
+        "resumo": "KS_002 (ABORT): apos pivot, 2o mes (~R600 acumulado) so com impressoes = encerra anuncio, volta ao organico+CLT. VAR_001 resolvida: rede de seguranca ~R600"
+      },
+      {
+        "id": 3,
+        "id_global": 17,
+        "quando": "2026-07-16T18:04:55",
+        "resumo": "Kill-switch de tempo descartado: disponibilidade de Enzo e elastica (adapta a demanda). Forca temporal critica era pessimista; risco humano rebaixado"
+      },
+      {
+        "id": 4,
+        "id_global": 18,
+        "quando": "2026-07-16T18:06:56",
+        "resumo": "KS_003 (cerca etica): so marketing dentro do CFP e com aval da Maria; agressivo-mas-legal permitido com consenso dela. Nao capta paciente por meio antietico"
+      },
+      {
+        "id": 5,
+        "id_global": 19,
+        "quando": "2026-07-16T18:09:54",
+        "resumo": "Distincao do KS_002 confirmada. Registrados ativos atuais: Google Maps (Psicologa Maria Bertolini) e Instagram @mariabertolinipsi, hoje os unicos canais de entrada"
+      },
+      {
+        "id": 6,
+        "id_global": 20,
+        "quando": "2026-07-16T18:11:58",
+        "resumo": "KS_004 (retencao): se maioria dos 3 primeiros captados nao virar recorrente, pausar escala e revisar fit/oferta. Usuario confirma como ponto de atencao"
+      },
+      {
+        "id": 7,
+        "id_global": 21,
+        "quando": "2026-07-16T18:13:14",
+        "resumo": "KS_005 (plataforma): conta suspensa/reprovada reincidente e nao recuperavel = pivotar de plataforma/abordagem, nao insistir. Mapa de ruina com 5 quebras"
+      }
+    ]
+  },
+  "fase_5_formalizacao": {
+    "status": "em_andamento",
+    "smart": {
+      "especifico": {
+        "nota": 8,
+        "justificativa": "Objetivo claro e sem ambiguidade relevante: captar >=3 pacientes recorrentes (mulheres adultas/adolescentes, atendimento online, sessao R$150) via anuncio pago, em 6 meses, dentro do CFP. Unica indefinicao remanescente e taticа (qual plataforma: Meta e/ou Google) — sera resolvida na Fase 6."
+      },
+      "mensuravel": {
+        "nota": 8,
+        "justificativa": "Sucesso definido sem ambiguidade pelo usuario: 3 pacientes RECORRENTES (cadeira ocupada semana apos semana), nao apenas captados. Captar 3 que nao engatam mas pagam o CAC = resultado NEUTRO. Metricas finais em dinheiro (pacientes recorrentes, CAC, receita recorrente mensal). Perde 2 pontos porque parte dos KPIs so se mede com dados reais da conta apos ~30-45 dias (VAR_002 ainda em faixa)."
+      },
+      "atingivel": {
+        "nota": 7,
+        "justificativa": "Meta deliberadamente modesta (3 recorrentes), preco ja validado, ativos organicos existentes (Google Maps + Instagram), disponibilidade humana elastica e downside financeiro capado (~R$600). Logica de orcamento coerente e aceita pelo usuario: R$600 e o leash contra fracasso total; para completar os 3 admite-se escalar a ~R$1.000-2.500 no semestre conforme ROI. Nao chega a 8-9 porque persistem duas incertezas reais so resolviveis testando: CAC de operador iniciante (pode ir ao topo da faixa) e a taxa de retencao (KS_004)."
+      },
+      "relevante": {
+        "nota": 9,
+        "justificativa": "Ataca diretamente a motivacao raiz (qualidade de vida: mais renda com menos horas, sair do CLT). Relacao LTV/CAC muito favoravel — paciente recorrente rende ~R$600/mes por varios meses contra CAC de centenas de reais. Retorno justifica com folga o investimento e o risco (baixo)."
+      },
+      "temporal": {
+        "nota": 7,
+        "justificativa": "Prazo de 6 meses e desejavel, nao rigido (escorregar para inicio de 2027 nao quebra nada), e a capacidade humana e elastica — a leitura 'forca temporal 3,69 critico' da Fase 3 foi rebaixada. Nao e maior porque o funil de psicoterapia tem maturacao (lead->recorrente leva semanas) e o operador e iniciante, o que pode alongar o ramp-up."
+      }
+    },
+    "kpis": [
+      {
+        "id": "KPI_001",
+        "nome": "Pacientes recorrentes captados via anuncio",
+        "formula_ou_criterio": "Numero de pacientes vindos do anuncio pago que mantiveram sessoes por >=4 semanas seguidas (viraram recorrentes). KPI principal de sucesso.",
+        "dimensao": "dinheiro",
+        "meta": ">=3 pacientes recorrentes",
+        "frequencia_medicao": "mensal"
+      },
+      {
+        "id": "KPI_002",
+        "nome": "CAC por paciente recorrente",
+        "formula_ou_criterio": "Gasto de midia acumulado / numero de pacientes recorrentes captados. Guardrail economico: como o paciente rende ~R$600/mes, o payback deve ocorrer em poucos meses.",
+        "dimensao": "dinheiro",
+        "meta": "CAC com payback <= ~2 meses (idealmente <= R$600 por paciente recorrente)",
+        "frequencia_medicao": "mensal"
+      },
+      {
+        "id": "KPI_003",
+        "nome": "Receita recorrente mensal adicionada pela clinica via anuncio",
+        "formula_ou_criterio": "Numero de pacientes recorrentes captados x ~R$600/mes (4 sessoes de R$150).",
+        "dimensao": "dinheiro",
+        "meta": ">= ~R$1.800/mes (equivalente a substituir a renda do CLT de ~R$1.900)",
+        "frequencia_medicao": "mensal"
+      }
+    ],
+    "objetivo_formalizado": "Captar, via campanha de anuncio pago online (Meta e/ou Google — plataforma a definir na fase tatica), ao menos 3 pacientes RECORRENTES para a clinica de psicoterapia de Maria Eduarda Bertolini (publico: mulheres adultas e adolescentes; atendimento online; sessao a R$150) ate ~dezembro/2026 (janela de 6 meses), sempre dentro das regras do CFP. Orcamento: inicio ~R$300/mes, com ABORT se ~R$600 forem gastos sem nenhum sinal de interesse, e disposicao de escalar a ~R$1.000-2.500 no semestre conforme ROI positivo. Meta economica: adicionar ~R$1.800/mes de receita recorrente (equivalente a substituir a renda do CLT de ~R$1.900), habilitando a saida do CLT com mais qualidade de vida. Execucao in-house por Enzo (disponibilidade elastica), com revisao de compliance CFP antes de subir a campanha. Sucesso = 3 recorrentes; captar sem reter (mas pagando o CAC) = neutro.",
+    "interacoes": [
+      {
+        "id": 1,
+        "id_global": 22,
+        "quando": "2026-07-16T18:16:16",
+        "resumo": "Sucesso = 3 recorrentes (nao so captados); captar sem reter mas pagando CAC = neutro. Definidos KPI_001 (>=3 recorrentes), KPI_002 (CAC payback <=2m), KPI_003 (>=R1800/mes)"
+      },
+      {
+        "id": 2,
+        "id_global": 23,
+        "quando": "2026-07-16T18:18:39",
+        "resumo": "SMART consolidado: E8/M8/A7/R9/T7. Orcamento coerente (R600 leash, escala a R1000-2500). Objetivo formalizado redigido"
+      },
+      {
+        "id": 3,
+        "id_global": 24,
+        "quando": "2026-07-16T18:19:33",
+        "resumo": "Usuario validou o objetivo formalizado palavra por palavra (de acordo integral)"
+      }
+    ]
+  },
+  "fase_6_tatico": {
+    "status": "pendente",
+    "caminhos_mapeados": [],
+    "caminho_escolhido": "",
+    "justificativa_escolha": "",
+    "quebras_do_caminho": [],
+    "interacoes": []
+  },
+  "fase_7_operacional": {
+    "status": "pendente",
+    "marcos": [],
+    "interacoes": []
+  }
+}
