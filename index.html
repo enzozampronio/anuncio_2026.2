@@ -11,6 +11,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-BB9Y9H38PH');
+        gtag('config', 'AW-18330110201');
     </script>
     <title>Maria Eduarda Bertolini — Psicóloga | Psicanálise Online</title>
     <meta name="description" content="Maria Eduarda Bertolini, psicóloga clínica com abordagem psicanalítica. Vagas abertas para atendimento online. Agende uma reunião de apresentação.">
@@ -406,7 +407,8 @@
             <h1>Maria Eduarda Bertolini</h1>
             <p class="bio">Psicóloga clínica, abordagem psicanalítica.</p>
 
-            <a href="https://calendar.app.google/By29mjuCndaFevHH9" class="btn-primary" target="_blank" rel="noopener">
+            <a href="https://calendar.app.google/By29mjuCndaFevHH9" class="btn-primary" target="_blank" rel="noopener"
+               data-track="clique_agendamento" data-secao="hero">
                 <i class="fas fa-calendar-check"></i>Agendar reunião de apresentação
             </a>
             <p class="value-prop">Vagas abertas para atendimento online.</p>
@@ -424,13 +426,18 @@
         <h2>Outros canais</h2>
         <p class="sub">Prefere falar antes? Me encontre por aqui.</p>
         <div class="redes">
-            <a href="mailto:dbertolini785@gmail.com" title="E-mail" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
-            <a href="https://api.whatsapp.com/send/?phone=5514998154785&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/mariabertolinipsi/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/maria-eduarda-bertolini-05b23820b/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:dbertolini785@gmail.com" title="E-mail" aria-label="E-mail"
+               data-track="clique_email" data-secao="contato"><i class="fas fa-envelope"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=5514998154785&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento.&type=phone_number&app_absent=0" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp"
+               data-track="clique_whatsapp" data-secao="contato"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/mariabertolinipsi/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram"
+               data-track="clique_instagram" data-secao="contato"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/maria-eduarda-bertolini-05b23820b/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"
+               data-track="clique_linkedin" data-secao="contato"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <div>
-            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=D003D1DC261D05AEAE40F6B63D068762.buscatextual_0" class="lattes-btn" target="_blank" rel="noopener">
+            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do;jsessionid=D003D1DC261D05AEAE40F6B63D068762.buscatextual_0" class="lattes-btn" target="_blank" rel="noopener"
+               data-track="clique_curriculo" data-secao="contato">
                 <i class="fas fa-award"></i>Currículo Lattes (CNPq)
             </a>
         </div>
@@ -438,7 +445,7 @@
 
     <!-- ===== FORMAÇÃO & TRAJETÓRIA (expansível) ===== -->
     <section class="expansivel">
-        <details class="acordeon">
+        <details class="acordeon" data-track-open="abriu_formacao">
             <summary>
                 <span class="titulo"><i class="fas fa-graduation-cap"></i>Formação &amp; Trajetória</span>
                 <i class="fas fa-chevron-down chevron"></i>
@@ -480,7 +487,7 @@
             </div>
         </details>
 
-        <details class="acordeon">
+        <details class="acordeon" data-track-open="abriu_valores">
             <summary>
                 <span class="titulo"><i class="fas fa-hand-holding-heart"></i>Valores</span>
                 <i class="fas fa-chevron-down chevron"></i>
@@ -499,6 +506,56 @@
         <p>&copy; 2026 Maria Eduarda Bertolini — Psicóloga · CRP 12/26985</p>
         <p>Atendimento psicológico online · Brasil</p>
     </footer>
+
+    <!-- ===== RASTREAMENTO DE CLIQUES (GA4 + conversões Google Ads) ===== -->
+    <script>
+        (function () {
+            var AW = 'AW-18330110201';
+
+            /* Botões que contam como conversão no Google Ads.
+               Rótulos gerados em Metas > Conversões. Os demais eventos vão só para o GA4. */
+            var CONVERSOES = {
+                clique_agendamento: { rotulo: 'xPoiCPby7tQcEPmRvaRE', valor: 10 },
+                clique_whatsapp:    { rotulo: 'uAY3CO-D79QcEPmRvaRE', valor: 7 },
+                clique_email:       { rotulo: '90YKCMWe79QcEPmRvaRE', valor: 3 },
+                clique_instagram:   { rotulo: 'JNAcCMie79QcEPmRvaRE', valor: 1 },
+                clique_linkedin:    { rotulo: 'fbG1CMue79QcEPmRvaRE', valor: 1 },
+                clique_curriculo:   { rotulo: 'WtbaCM6e79QcEPmRvaRE', valor: 1 }
+            };
+
+            document.addEventListener('click', function (e) {
+                var alvo = e.target;
+                if (!alvo || !alvo.closest) return;
+
+                var el = alvo.closest('[data-track]');
+                if (!el) return;
+
+                var evento = el.getAttribute('data-track');
+
+                gtag('event', evento, {
+                    botao: evento,
+                    secao: el.getAttribute('data-secao') || 'nao_definida',
+                    destino: el.getAttribute('href') || ''
+                });
+
+                var conv = CONVERSOES[evento];
+                if (conv) {
+                    gtag('event', 'conversion', {
+                        send_to: AW + '/' + conv.rotulo,
+                        value: conv.valor,
+                        currency: 'BRL'
+                    });
+                }
+            });
+
+            /* Abertura dos acordeões — sinal de engajamento, só GA4. Nunca vira conversão. */
+            Array.prototype.forEach.call(document.querySelectorAll('details[data-track-open]'), function (d) {
+                d.addEventListener('toggle', function () {
+                    if (d.open) gtag('event', d.getAttribute('data-track-open'));
+                });
+            });
+        })();
+    </script>
 
 </body>
 </html>
